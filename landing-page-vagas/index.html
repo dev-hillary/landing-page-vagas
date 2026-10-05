@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vagas de Estágio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="navbar">
+      <h2>Vagas<span>Estágio</span></h2>
+    </nav>
+
+    <div class="hero-content">
+      <p class="tag">OPORTUNIDADES PARA ESTUDANTES</p>
+      <h1>Encontre sua próxima<br>oportunidade de estágio</h1>
+      <p>Cadastre e divulgue vagas de estágio de forma simples e organizada.</p>
+      <a href="#cadastro" class="btn">Cadastrar uma vaga</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="cadastro" class="form-section">
+      <div class="section-title">
+        <p>CADASTRO</p>
+        <h2>Divulgue uma vaga de estágio</h2>
+        <span>Preencha os dados abaixo para adicionar uma nova oportunidade.</span>
+      </div>
+
+      <form id="vagaForm">
+        <div class="form-grid">
+          <div class="campo">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" placeholder="Ex.: Tech Solutions" required>
+          </div>
+
+          <div class="campo">
+            <label for="vaga">Nome da vaga</label>
+            <input type="text" id="vaga" placeholder="Ex.: Estagiário de Desenvolvimento" required>
+          </div>
+
+          <div class="campo">
+            <label for="area">Área</label>
+            <input type="text" id="area" placeholder="Ex.: Tecnologia" required>
+          </div>
+
+          <div class="campo">
+            <label for="modalidade">Modalidade</label>
+            <select id="modalidade" required>
+              <option value="">Selecione</option>
+              <option>Presencial</option>
+              <option>Híbrido</option>
+              <option>Remoto</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="localizacao">Localização</label>
+            <input type="text" id="localizacao" placeholder="Ex.: Fortaleza - CE" required>
+          </div>
+
+          <div class="campo">
+            <label for="bolsa">Bolsa-auxílio</label>
+            <input type="text" id="bolsa" placeholder="Ex.: R$ 1.200,00" required>
+          </div>
+
+          <div class="campo campo-completo">
+            <label for="descricao">Descrição da vaga</label>
+            <textarea id="descricao" rows="4" placeholder="Descreva as atividades e requisitos..." required></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit">Cadastrar vaga</button>
+        <p id="mensagem" class="mensagem"></p>
+      </form>
+    </section>
+
+    <section class="vagas-section">
+      <div class="section-title">
+        <p>OPORTUNIDADES</p>
+        <h2>Vagas de estágio</h2>
+        <span>Confira as oportunidades cadastradas.</span>
+      </div>
+
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Vaga</th>
+              <th>Empresa</th>
+              <th>Área</th>
+              <th>Modalidade</th>
+              <th>Localização</th>
+              <th>Bolsa</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaVagas">
+            <tr id="semVagas">
+              <td colspan="6">Nenhuma vaga cadastrada ainda.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto acadêmico — Landing Page de Divulgação de Vagas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
