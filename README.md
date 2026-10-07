@@ -6,6 +6,10 @@ Landing page para divulgação de vagas de estágio.
 
 O projeto consiste em uma landing page onde é possível cadastrar uma vaga de estágio por meio de um formulário. Após o preenchimento, a vaga cadastrada é adicionada automaticamente à tabela de divulgação.
 
+## 🔗 Acesse o projeto
+
+https://dev-hillary.github.io/landing-page-vagas/
+
 ## Tecnologias utilizadas
 
 - HTML5
